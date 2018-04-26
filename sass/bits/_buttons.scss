@@ -1,0 +1,32 @@
+/* Buttons (bit) ===== */
+.button{
+	text-decoration:none;
+	padding:8px 15px;
+	text-transform:uppercase;
+	letter-spacing:.04em;
+	border-radius:2px; 
+	text-align:center;
+	display:inline-block;
+	position:relative;
+
+	&--primary {
+		@extend .button;
+		background:$grey-dark;
+		border:1px solid $grey-dark;
+		color:$white;
+
+
+	}
+
+	&--secondary {
+		@extend .button;
+		background:$white;
+		border:1px solid $grey;
+		color:$body-text;
+
+		&:hover,&:focus{
+			background:$grey-light;
+			color:#000;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+// config file for common colors and mixins
+
+
+// COLORS
+$grey-dark:		#554c5d;
+$grey:			#B3B3B3;
+$grey-light:	#eaeaea;
+$body-text:		#333333;
+$white:			#ffffff;
+
+$blue:			#16539e;
+
+$active:		#7f3f94;
+
+// TYPOGRAPHY
+$fw-regular: 	400;
+$fw-bold:		700;
+
+////// RESPONSIVE BREAK POINTS ////////////
+// Common
+$gt-phone:		"screen and (min-width:750px)";
+$phone:         "screen and (max-width:749px)";
+$desktop:       "screen and (min-width:1062px)";
+
+$max-site-width:	1200px;
+
+@mixin close-button($color){
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size:0px;
+	cursor:pointer;
+	line-height:0px;
+	height:25px;
+	width:25px;
+	text-align:center;
+	text-decoration:none;
+	&:before{
+		content:'X';
+		font-size:14px;
+		color:$color;
+		line-height:25px;
+	}
+	&:hover,&:focus{
+		&:before{
+			color:$body-text;
+		}
+	}
+}
+
+@mixin focus-outline($color){
+	outline:1px dotted $color;
+	outline-offset:2px;
+}

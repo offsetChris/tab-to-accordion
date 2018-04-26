@@ -1,0 +1,28 @@
+/* tab row (pieces) ==== */
+.tab-row{
+	margin:20px auto 0px auto;
+	display:flex;
+	flex-direction:column;
+	max-width:800px;
+
+
+	@media #{$gt-phone}{
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+
+	.button--secondary{
+		flex-grow:1;
+		border-bottom-right-radius:0px;
+		border-bottom-left-radius:0px;
+		margin-top:-1px;
+
+		@media #{$gt-phone}{
+			margin-right:5px;
+
+			&:last-child{
+				margin-right:0px;
+			}
+		}
+	}
+}

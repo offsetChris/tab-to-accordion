@@ -1,0 +1,22 @@
+/* Basics (typography etc) ====== */
+html{
+	color:$body-text;
+	font-size:1em;
+	line-height:1.4;
+}
+
+body{
+	font: 16px/26px 'Lato', Arial, sans-serif;
+	
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+a:focus{
+	@include focus-outline($grey-dark);
+}

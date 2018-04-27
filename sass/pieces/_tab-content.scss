@@ -1,16 +1,32 @@
 /* tab content (pieces) ==== */
 // might want to combine into a larger compoonent with tab-row
 .tab-content{
-	max-width:800px;
-	margin:0 auto 20px auto;
 	padding:30px 20px;
 	border:1px solid $grey;
 	position:relative;
 	margin-top:-1px;
+	display:none;
+	flex-basis:100%;
+
+
+
+	@media #{$gt-phone}{
+		margin:-1px auto 20px auto;
+		order:5;
+	}
 
 	.tab-content_close{
 		@include close-button($blue)
 		top:10px;
 		right:10px;
+		display:none;
+
+		@media #{$gt-phone}{
+			display:block;
+		}
+	}
+
+	.tab-content_text{
+		display:none;
 	}
 }

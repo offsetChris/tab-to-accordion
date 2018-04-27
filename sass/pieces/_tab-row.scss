@@ -3,7 +3,9 @@
 	margin:20px auto 0px auto;
 	display:flex;
 	flex-direction:column;
-	max-width:800px;
+	
+
+
 
 
 	@media #{$gt-phone}{
@@ -16,12 +18,22 @@
 		border-bottom-right-radius:0px;
 		border-bottom-left-radius:0px;
 		margin-top:-1px;
+		text-align:left;
 
 		@media #{$gt-phone}{
 			margin-right:5px;
+			text-align:center;
 
 			&:last-child{
 				margin-right:0px;
+			}
+		}
+
+		&.is-active{
+			cursor:default;
+			&:hover, &:focus{
+				background:$active;
+				color:$white;
 			}
 		}
 	}

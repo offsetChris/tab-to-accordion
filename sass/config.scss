@@ -12,9 +12,12 @@ $blue:			#16539e;
 
 $active:		#7f3f94;
 
+
 // TYPOGRAPHY
 $fw-regular: 	400;
 $fw-bold:		700;
+
+$icon-font:		"Font Awesome 5 Regular"; 
 
 ////// RESPONSIVE BREAK POINTS ////////////
 // Common
@@ -22,7 +25,7 @@ $gt-phone:		"screen and (min-width:750px)";
 $phone:         "screen and (max-width:749px)";
 $desktop:       "screen and (min-width:1062px)";
 
-$max-site-width:	1200px;
+$max-site-width:	800px;
 
 @mixin close-button($color){
 	position:absolute;

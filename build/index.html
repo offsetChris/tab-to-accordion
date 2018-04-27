@@ -9,8 +9,9 @@
         <title>Tabs to Accordions responsive dev pattern</title>
         <meta name="description" content="UX pattern for responsive tabs to accordion change">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     </head>
     <body>
@@ -19,16 +20,21 @@
             <h1>TEST</h1>
 
             <section class="demo">
-                <div class="tab-row">
-                    <a class="button--secondary is-active" href="javascript:void(0);">Tab 1</a>
-                    <a class="button--secondary" href="javascript:void(0);">Tab 2</a>
-                    <a class="button--secondary" href="javascript:void(0);">Tab 3</a>
-                    <a class="button--secondary" href="javascript:void(0);">Tab 4</a>
-                </div>
+                <div class="tabs">
+                    <div class="tab-row">
+                        <a class="button--secondary js_tab" href="#tab-content--1">Tab 1</a>
+                        <a class="button--secondary js_tab" href="#tab-content--2">Tab 2</a>
+                        <a class="button--secondary js_tab" href="#tab-content--3">Tab 3</a>
+                        <a class="button--secondary js_tab" href="#tab-content--4">Tab 4</a>
+                    </div>
 
-                <div class="tab-content" aria-expanded="true">
-                    <a class="tab-content_close" href="javascript:void(0);">X Close</a>
-                    <p>Details of tab is populated here.</p>
+                    <div class="tab-content" aria-expanded="true">
+                        <a class="tab-content_close js_tab-close" href="javascript:void(0);">X Close</a>
+                        <p class="tab-content_text" id="tab-content--1">Tab 1 content</p>
+                        <p class="tab-content_text" id="tab-content--2">Tab 2 content</p>
+                        <p class="tab-content_text" id="tab-content--3">Tab 3 content</p>
+                        <p class="tab-content_text" id="tab-content--4">Tab 4 content</p>
+                    </div>
                 </div>
             </section>
         </section>
@@ -36,8 +42,7 @@
 
        
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
         <script src="js/main.js"></script>
 
